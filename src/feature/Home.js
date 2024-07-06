@@ -16,8 +16,10 @@ const Home = () => {
 
      <h1 className='lg:text-3xl md:text-lg'>Hi ! I'M Umesh Roka Magar</h1>
      <h1 className='lg:text-3xl '>Full Stack Developer</h1>
-     <h1 className='uppercase bg-orange-300 max-w-fit px-3 rounded'>Contact</h1>
-
+     <div className=' transition duration-150 ease-out hover:ease-in mt-3'>
+     <button className='uppercase transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ... bg-orange-300 max-w-fit px-3  rounded'>Contact</button>
+ 
+     </div>
   </div>
   <div className='img-sec '>
   <img className=' h-[300px] lg:h-[400px] w-[200px] lg:w-[300px]' src={Myimage} alt="" />
@@ -28,7 +30,7 @@ const Home = () => {
  
 
 
- <div className="about-sec pb-[30px]">
+ <div id='about' className="about-sec pb-[30px]">
 
  <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
   <h1 className='p-3 lg:mx-[200px] uppercase text-2xl lg:4xl'>About me</h1>

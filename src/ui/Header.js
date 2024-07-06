@@ -4,7 +4,6 @@ import {
   MobileNav,
   Typography,
   IconButton,
-  Card,
 } from "@material-tailwind/react";
 import { NavLink } from "react-router-dom";
 
@@ -20,37 +19,37 @@ const  Header=()=> {
   }, []);
  
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white uppercase lg:text-3xl">
       <Typography
         as="li"
-        variant="small"
-        color="blue-gray"
+       
+       
         className="p-1 font-normal"
       >
       <NavLink className=''>Home</NavLink>
       </Typography>
       <Typography
         as="li"
-        variant="small"
-        color="blue-gray"
+        
+     
         className="p-1 font-normal"
       >
-             <NavLink>Services</NavLink>
+             <NavLink to ='/services'>Services</NavLink>
 
       </Typography>
       <Typography
         as="li"
-        variant="small"
-        color="blue-gray"
+      
+     
         className="p-1 font-normal"
       >
-            <NavLink>About</NavLink>
+            <NavLink to=''>About</NavLink>
 
       </Typography>
       <Typography
         as="li"
-        variant="small"
-        color="blue-gray"
+       
+      
         className="p-1 font-normal"
       >
              <NavLink>Contact</NavLink>
@@ -60,22 +59,16 @@ const  Header=()=> {
   );
  
   return (
-    <div className="sticky top-0 z-50 max-w-[100%]">
-      <Navbar className=" h-max max-w-full rounded-none  py-2 lg:px-8 lg:py-4">
-        <div className="flex items-center justify-between text-blue-gray-900">
-          <Typography
-            as="a"
-            href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium"
-          >
-           
-          </Typography>
+    <div className="sticky top-0 z-50  max-w-[100%]">
+
+      <Navbar className=" h-max max-w-full bg-blue-gray-900 text-white rounded-none  py-2 lg:px-8 lg:py-4">
+        <div className="flex items-center justify-start text-blue-gray-900">
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
            
             <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden float-right"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
