@@ -1,9 +1,9 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
   Typography,
   IconButton,
+  Collapse,
 } from "@material-tailwind/react";
 import { NavLink } from "react-router-dom";
 
@@ -24,7 +24,7 @@ const  Header=()=> {
         as="li"
        
        
-        className="p-1 font-normal"
+        className="p-1 font-normal  hover:text-white hover:bg-orange-400"
       >
       <NavLink className=''>Home</NavLink>
       </Typography>
@@ -63,6 +63,7 @@ const  Header=()=> {
 
       <Navbar className=" h-max max-w-full bg-blue-gray-900 text-white rounded-none  py-2 lg:px-8 lg:py-4">
         <div className="flex items-center justify-start text-blue-gray-900">
+
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
            
@@ -105,9 +106,9 @@ const  Header=()=> {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
+        <Collapse open={openNav}>
           {navList}
-        </MobileNav>
+        </Collapse>
       </Navbar>
     </div>
   );
