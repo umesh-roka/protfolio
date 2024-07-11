@@ -43,7 +43,7 @@ const  Header=()=> {
         as="li"
         
      
-        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
+        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
       >
         <NavLink onClick={() => scrollToSection('services')} >Services</NavLink>
 
@@ -52,7 +52,7 @@ const  Header=()=> {
         as="li"
         
      
-        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
+        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
       >
        <NavLink onClick={() => scrollToSection('skills')} >SKill</NavLink>
 
@@ -61,7 +61,7 @@ const  Header=()=> {
         as="li"
       
      
-        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
+        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
       >
             <NavLink to=''>About</NavLink>
 
@@ -70,7 +70,7 @@ const  Header=()=> {
         as="li"
        
       
-        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
+        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md  hover:text-white hover:bg-orange-400"
       >
              <NavLink
             onClick={() => scrollToSection('contact')}  >Contact</NavLink>
@@ -79,12 +79,17 @@ const  Header=()=> {
   );
  
   return (
-    <>
+ 
     <div className="sticky top-0 z-50  max-w-[100%]">
 
       <Navbar className=" h-max max-w-full bg-blue-gray-900 text-white rounded-none  py-2 lg:px-8 lg:py-4">
-        <div className="flex items-center justify-start text-blue-gray-900">
+       
+        <div className="flex justify-between text-blue-gray-900">
 
+        <div className="flex uppercase text-white items-center justify-start ">
+        <h1>Portfolio</h1>
+       </div>
+       
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
            
@@ -137,7 +142,7 @@ const  Header=()=> {
     </div>
 
    
-    </>
+
   );
 }
 
