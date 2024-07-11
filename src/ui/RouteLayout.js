@@ -5,7 +5,7 @@ import { Outlet } from 'react-router'
 const RouteLayout = () => {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <Outlet/>
     </div>
   )

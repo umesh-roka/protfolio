@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext} from "react";
 import {
   Navbar,
   Typography,
@@ -6,10 +6,21 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 import { NavLink } from "react-router-dom";
+import { RefContext } from "../feature/RefContext";
 
  
 const  Header=()=> {
   const [openNav, setOpenNav] = React.useState(false);
+
+  const sectionRefs = useContext(RefContext);
+  const scrollToSection = (section) => {
+    if (sectionRefs[section].current) {
+      sectionRefs[section].current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
+
  
   React.useEffect(() => {
     window.addEventListener(
@@ -23,8 +34,8 @@ const  Header=()=> {
       <Typography
         as="li"
        
-       
-        className="p-1 font-normal  hover:text-white hover:bg-orange-400"
+      
+        className="p-1 lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
       >
       <NavLink className=''>Home</NavLink>
       </Typography>
@@ -32,16 +43,25 @@ const  Header=()=> {
         as="li"
         
      
-        className="p-1 font-normal"
+        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
       >
-             <NavLink to ='/services'>Services</NavLink>
+        <NavLink onClick={() => scrollToSection('services')} >Services</NavLink>
+
+      </Typography>
+      <Typography
+        as="li"
+        
+     
+        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
+      >
+       <NavLink onClick={() => scrollToSection('skills')} >SKill</NavLink>
 
       </Typography>
       <Typography
         as="li"
       
      
-        className="p-1 font-normal"
+        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
       >
             <NavLink to=''>About</NavLink>
 
@@ -50,15 +70,16 @@ const  Header=()=> {
         as="li"
        
       
-        className="p-1 font-normal"
+        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
       >
-             <NavLink>Contact</NavLink>
-
+             <NavLink
+            onClick={() => scrollToSection('contact')}  >Contact</NavLink>
       </Typography>
     </ul>
   );
  
   return (
+    <>
     <div className="sticky top-0 z-50  max-w-[100%]">
 
       <Navbar className=" h-max max-w-full bg-blue-gray-900 text-white rounded-none  py-2 lg:px-8 lg:py-4">
@@ -110,7 +131,13 @@ const  Header=()=> {
           {navList}
         </Collapse>
       </Navbar>
+
+
+
     </div>
+
+   
+    </>
   );
 }
 

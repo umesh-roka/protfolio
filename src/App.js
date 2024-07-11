@@ -10,18 +10,7 @@ path:'/',
 element:<RouteLayout/>,
 children:[
 {index:true, element:<Home/>},
-
-
-
-
-]
-
-
-
-}
-
-
-
+]}
 ])
 const App = () => {
  
