@@ -1,20 +1,20 @@
-import React from 'react'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import RouteLayout from './ui/RouteLayout'
-import Home from './feature/Home'
+import React, { useEffect, useState } from 'react'
 
-
-const router = createBrowserRouter([{
-
-path:'/',
-element:<RouteLayout/>,
-children:[
-{index:true, element:<Home/>},
-]}
-])
 const App = () => {
- 
-  return <RouterProvider router={router}/>
+  const [count, setCount]=useState(0);
+  const[name,setName]= useState(false)
+  useEffect(()=>{
+if(count === 3){
+  setName(true)
+}
+  },[count])
+  return (
+    <div>
+      <h1>{count}</h1>
+      {name? <p>Hello </p>:null }
+      <button onClick={()=>setCount(count+1)}>increment</button>
+    </div>
+  )
 }
 
 export default App
