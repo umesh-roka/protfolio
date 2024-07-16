@@ -81,7 +81,6 @@ const  Header=()=> {
   return (
  
     <div className="sticky top-0 z-50  max-w-[100%]">
-
       <Navbar className=" h-max max-w-full bg-blue-gray-900 text-white rounded-none  py-2 lg:px-8 lg:py-4">
        
         <div className="flex justify-between text-blue-gray-900">
