@@ -1,4 +1,7 @@
 import React from 'react'
+import portfolio from './images/portfolio.png'
+import pawstore from './images/pawstore.png'
+import codepen from './images/codepen.png'
 import { NavLink } from 'react-router-dom'
 import {
   Card,
@@ -22,7 +25,7 @@ const Projects = () => {
           <CardHeader floated={false} >
             <img
             className='h-[200px] w-[300px]'
-              src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              src={pawstore}
               alt="ui/ux review check"
             />
            
@@ -30,8 +33,8 @@ const Projects = () => {
           <CardBody>
             
             <Typography color="gray">
-              <h1 className=' font-bold text-xl'>Project Name</h1>
-              <NavLink><Button className='my-[10px]'> Vist Website</Button></NavLink>
+              <h1 className=' font-bold text-xl'>CodePen Colne</h1>
+              <NavLink to='https://pawstore-delta.vercel.app/'><Button className='my-[10px]'> Vist Website</Button></NavLink>
               
             </Typography>
            
@@ -43,7 +46,7 @@ const Projects = () => {
           <CardHeader floated={false} >
             <img
             className='h-[200px] w-[300px]'
-              src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              src={codepen}
               alt="ui/ux review check"
             />
            
@@ -51,8 +54,8 @@ const Projects = () => {
           <CardBody>
             
             <Typography color="gray">
-              <h1 className=' font-bold text-xl'>Project Name</h1>
-              <NavLink><Button className='my-[10px]'> Vist Website</Button></NavLink>
+              <h1 className=' font-bold text-xl'>Pet Store</h1>
+              <NavLink to ='https://clone-codepen-git-second-umesh-rokas-projects.vercel.app/'><Button className='my-[10px]'> Vist Website</Button></NavLink>
               
             </Typography>
            
@@ -65,7 +68,7 @@ const Projects = () => {
           <CardHeader floated={false} >
             <img
             className='h-[200px] w-[300px]'
-              src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              src={portfolio}
               alt="ui/ux review check"
             />
            
@@ -73,8 +76,8 @@ const Projects = () => {
           <CardBody>
             
             <Typography color="gray">
-              <h1 className=' font-bold text-xl'>Project Name</h1>
-              <NavLink><Button className='my-[10px]'> Vist Website</Button></NavLink>
+              <h1 className=' font-bold text-xl'>Protfolio</h1>
+              <NavLink to='https://protfolio-eight-dun.vercel.app/'><Button className='my-[10px]'> Vist Website</Button></NavLink>
               
             </Typography>
            
