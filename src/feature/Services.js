@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <div className='my-[30px] '> 
     <h1 className='uppercase font-bold text-3xl text-center mb-[50px]'>Services</h1>
-     <div className=' grid lg:grid-cols-4 sm:grid-cols-1 gap-[20px] mx-[80px]'>
+     <div className=' grid lg:grid-cols-4 sm:grid-cols-1 gap-[20px] mx-[50px]'>
  
     
         <Card className="mt-6 w-[300px]">

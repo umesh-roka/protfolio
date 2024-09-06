@@ -12,11 +12,11 @@ import {
 const Projects = () => {
   return (
  
-    <div className='mx-[80px]'>
+    <div className='mx-[50px]'>
 
       <h1 className='font-bold text-3xl uppercase text-center my-[50px]'>Projects</h1>
     
-      <div className='grid lg:grid-cols-4 sm:grid-cols-1 gap-[10px]'>
+      <div className='grid  lg:grid-cols-4 sm:grid-cols-1 gap-[10px]'>
         {/* project 1 */}
         <Card className=" w-[300px] mb-[10px]  shadow-lg">
           <CardHeader floated={false} >
