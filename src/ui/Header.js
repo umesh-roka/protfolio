@@ -30,12 +30,12 @@ const  Header=()=> {
   }, []);
  
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white uppercase lg:text-3xl">
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white font-bold  ">
       <Typography
         as="li"
        
       
-        className="p-1 lg:hover:px-2 lg:hover:rounded-md font-normal  hover:text-white hover:bg-orange-400"
+        className="p-1 lg:hover:px-2 lg:hover:rounded-md font-bold text-xl  hover:text-white hover:bg-orange-400 "
       >
       <NavLink className=''>Home</NavLink>
       </Typography>
@@ -43,7 +43,7 @@ const  Header=()=> {
         as="li"
         
      
-        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
+        className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
       >
         <NavLink onClick={() => scrollToSection('services')} >Services</NavLink>
 
@@ -52,7 +52,7 @@ const  Header=()=> {
         as="li"
         
      
-        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
+        className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
       >
        <NavLink onClick={() => scrollToSection('skills')} >SKill</NavLink>
 
@@ -61,7 +61,7 @@ const  Header=()=> {
         as="li"
       
      
-        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
+        className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
       >
             <NavLink to=''>About</NavLink>
 
@@ -70,7 +70,7 @@ const  Header=()=> {
         as="li"
        
       
-        className="p-1 font-normal lg:hover:px-2 lg:hover:rounded-md  hover:text-white hover:bg-orange-400"
+        className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md  hover:text-white hover:bg-orange-400"
       >
              <NavLink
             onClick={() => scrollToSection('contact')}  >Contact</NavLink>
@@ -86,7 +86,7 @@ const  Header=()=> {
        
         <div className="flex justify-between text-blue-gray-900">
 
-        <div className="flex uppercase text-white items-center justify-start ">
+        <div className="flex font-bold text-xl uppercase text-white items-center justify-start ">
         <h1>Portfolio</h1>
        </div>
        

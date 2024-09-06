@@ -4,7 +4,7 @@ const Skills = () => {
   return (
 
 <div className='uppercase mt-3'>
-  <h1 className='text-center text-2xl lg:text-4xl mr-[30px] lg:mr-[70px] underline italic mb-[20px] lg:mb-[40px]'>Skills</h1>
+  <h1 className='font-bold uppercase text-3xl text-center mb-[50px]'>Skills</h1>
 
 
 <div className='pb-[40px] mx-[25px] lg:mr-[150px] lg:ml-[200px]  grid grid-cols-3 lg:grid lg:grid-cols-4'>

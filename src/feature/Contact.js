@@ -6,7 +6,7 @@ const Contact = () => {
 
 <h1 className='text-center text-2xl lg:text-4xl mr-[30px] lg:mr-[70px] underline italic mb-[20px] uppercase '>Contact</h1>
 
-<div className='uppercase grid grid-flow-row mx-[10px] lg:mx-[50px] lg:grid lg:grid-cols-4 '>
+<div className='uppercase grid grid-flow-rows mx-[10px] lg:mx-[50px] lg:grid lg:grid-flow-cols '>
   <facebook className='h-[50px] w-[100px] flex flex-row items-center'>
 <img className='h-[40px]' src="https://static.vecteezy.com/system/resources/thumbnails/041/643/208/small/facebook-logo-facebook-icon-transparent-white-background-free-png.png" alt=" facebook" />
 <h1>Facebook</h1>

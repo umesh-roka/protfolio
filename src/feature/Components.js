@@ -5,13 +5,14 @@ import Services from './Services'
 import Projects from './Projects'
 import Contact from './Contact'
 import { RefContext } from './RefContext'
+import Footer from '../ui/Foooter'
 const Components = () => {
   
   const sectionRefs = useContext(RefContext);
 
   return (
     <div>
-       <div className=' bg-blue-gray-800  z-0 text-white'>
+       <div className=' bg-blue-gray-800   z-0 text-white'>
 
 <div className="max-h-[100%] pb-12 px-5 bg-blue-gray-900  grid grid-flow-col justify-center gap-10">      
 
@@ -52,12 +53,12 @@ const Components = () => {
 <div  ref={sectionRefs.services} className="pt-6 Services-sec">
 <Services/>
 </div>
-<div className="projects">
+<div className="projects ">
 <Projects/>
 </div>
 
-<div  ref={sectionRefs.contact}  className="contact pb-12">
-<Contact/>
+<div className=" bg-blue-gray-900 pt-[10px] mt-[100px] ">
+<Footer/>
 </div>
 </div>
     </div>

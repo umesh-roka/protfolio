@@ -1,23 +1,79 @@
 import React from 'react'
-
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+ 
 const Services = () => {
   return (
-    <div>
- <h1 className='text-center text-2xl lg:text-4xl mr-[30px] lg:mr-[70px] underline italic mb-[20px] uppercase '>Services</h1>
+    <div className='my-[30px] '> 
+    <h1 className='uppercase font-bold text-3xl text-center mb-[50px]'>Services</h1>
+     <div className=' grid lg:grid-cols-4 sm:grid-cols-1 gap-[20px] mx-[80px]'>
+ 
+    
+        <Card className="mt-6 w-[300px]">
+          <CardBody>
+            <Typography  color="blue-gray" className="mb-2 text-lg underline font-bold uppercase">
+            Responsive Website
+            </Typography>
+            <Typography>     
+        A responsive website adapts its layout and content to fit different screen sizes and devices, providing an optimal user experience. It uses flexible grids, images, and media queries to ensure accessibility across desktops, tablets, and smartphones.
+            </Typography>
+          </CardBody>
+          <CardFooter className="pt-0">
+            <Button>Read More</Button>
+          </CardFooter>
+          
+        </Card>
+        <Card className="mt-6 w-[300px]">
+          <CardBody>
+            <Typography  color="blue-gray" className="mb-2 text-lg underline font-bold uppercase">
+             Database design
+            </Typography>
+            <Typography>   
+        Database design is the process of structuring data in a database to ensure efficient storage, retrieval, and management. It involves creating tables, defining relationships, and ensuring data integrity through normalization and constraints.
+            </Typography>
+          </CardBody>
+          <CardFooter className="pt-0">
+            <Button>Read More</Button>
+          </CardFooter>
+          
+        </Card>
+        <Card className="mt-6 w-[300px]">
+          <CardBody>
+            <Typography  color="blue-gray" className="mb-2 text-lg underline font-bold uppercase">
+              fullstack development
+            </Typography>
+            <Typography>    
+      Fullstack development involves building both the front-end (user interface) and back-end (server, database) of web applications. A fullstack developer works with multiple technologies like HTML, CSS, JavaScript, databases, and server-side programming to create complete applications.
+            </Typography>
+          </CardBody>
+          <CardFooter className="pt-0">
+            <Button>Read More</Button>
+          </CardFooter>
+          
+        </Card>
+        <Card className="mt-6 w-[300px]">
+          <CardBody>
+            <Typography  color="blue-gray" className="mb-2 text-lg underline font-bold uppercase">
+              Web Hosting
+            </Typography>
+            <Typography>
+          Web hosting is a service that allows individuals or organizations to store their website files on servers, making them accessible on the internet. Hosting providers offer various plans, including shared, VPS, and dedicated hosting, to suit different needs and budgets.
+            </Typography>
+          </CardBody>
+          <CardFooter className="pt-0">
+            <Button>Read More</Button>
+          </CardFooter>
+          
+        </Card>
+        </div>
+        </div>
 
-<div className='uppercase space-y-2 lg:space-y-3 px-2 mx-[30px] lg:mx-[50px] pb-[40px] lg:pb-[60px] lg:grid lg:grid-cols-3'>
-   <h1 className='text-[15px]  lg:text-2xl px-[5px] rounded-lg  w-[300px]  lg:w-[500px] lg:mt-[11px] lg:transition ease-in-out delay-150 bg-blue-500 lg:hover:-translate-y-1 lg:hover:scale-110 lg:hover:bg-orange-300 duration-300 ... '> responsive Web development</h1>
-  
-   <h1 className='text-[15px] lg:text-2xl px-[5px] rounded-lg  w-[300px] lg:ml-[80px] lg:w-[400px] lg:transition ease-in-out delay-150 bg-blue-500 lg:hover:-translate-y-1 lg:hover:scale-110 lg:hover:bg-orange-300 duration-300 ...'>full stack development</h1>
-   <h1 className='text-[15px] lg:text-2xl lg:ml-[40px] rounded-lg  w-[300px] lg:w-[400px] lg:transition ease-in-out delay-150 bg-blue-500 lg:hover:-translate-y-1 lg:hover:scale-110 lg:hover:bg-orange-300 duration-300 ...'>backend  development</h1>
-
-   <h1 className='text-[15px] lg:text-2xl px-[5px] rounded-lg  w-[300px]  lg:w-[500px] lg:transition ease-in-out delay-150 bg-blue-500 lg:hover:-translate-y-1 lg:hover:scale-110 lg:hover:bg-orange-300 duration-300 ...'>database design</h1>
-
-   <h1 className='text-[15px] lg:text-2xl px-[5px] rounded-lg  w-[300px] lg:ml-[80px] lg:w-[400px] lg:transition ease-in-out delay-150 bg-blue-500 lg:hover:-translate-y-1 lg:hover:scale-110 lg:hover:bg-orange-300 duration-300 ...'>Web hosting</h1>
-
-   </div>
-
-    </div>
+   
   )
 }
 
