@@ -3,7 +3,6 @@ import Myimage from './images/IMG_8134-removebg-preview.png'
 import Skills from './Skills'
 import Services from './Services'
 import Projects from './Projects'
-import Contact from './Contact'
 import { RefContext } from './RefContext'
 import Footer from '../ui/Foooter'
 const Components = () => {
@@ -53,7 +52,7 @@ const Components = () => {
 <div  ref={sectionRefs.services} className="pt-6 Services-sec">
 <Services/>
 </div>
-<div className="projects ">
+<div className="projects pt-6 ">
 <Projects/>
 </div>
 

@@ -15,10 +15,10 @@ const Projects = () => {
     <div className='mx-[80px]'>
 
       <h1 className='font-bold text-3xl uppercase text-center my-[50px]'>Projects</h1>
-      
-      <div className=' grid lg:grid-cols-4 sm:grid-cols-1'>
+    
+      <div className='grid lg:grid-cols-4 sm:grid-cols-1 gap-[10px]'>
         {/* project 1 */}
-        <Card className=" w-[300px] shadow-lg">
+        <Card className=" w-[300px] mb-[10px]  shadow-lg">
           <CardHeader floated={false} >
             <img
             className='h-[200px] w-[300px]'
@@ -39,7 +39,7 @@ const Projects = () => {
         
         </Card>
         {/* project 2 */}
-        <Card className=" w-[300px] shadow-lg">
+        <Card className=" w-[300px] mb-[10px] shadow-lg">
           <CardHeader floated={false} >
             <img
             className='h-[200px] w-[300px]'
@@ -61,7 +61,7 @@ const Projects = () => {
         </Card>
 
                 {/* project 3 */}
-                <Card className=" w-[300px] shadow-lg">
+                <Card className=" w-[300px] mb-[10px] shadow-lg">
           <CardHeader floated={false} >
             <img
             className='h-[200px] w-[300px]'
@@ -83,7 +83,7 @@ const Projects = () => {
         </Card>
 
                 {/* project 4 */}
-                <Card className=" w-[300px] shadow-lg">
+                <Card className=" w-[300px] mb-[10px] shadow-lg">
           <CardHeader floated={false} >
             <img
             className='h-[200px] w-[300px]'
