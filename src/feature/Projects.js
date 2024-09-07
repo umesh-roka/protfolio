@@ -33,7 +33,7 @@ const Projects = () => {
           <CardBody>
             
             <Typography color="gray">
-              <h1 className=' font-bold text-xl'>CodePen Colne</h1>
+              <h1 className=' font-bold text-xl'>Pet Store</h1>
               <NavLink to='https://pawstore-delta.vercel.app/'><Button className='my-[10px]'> Vist Website</Button></NavLink>
               
             </Typography>
@@ -54,7 +54,7 @@ const Projects = () => {
           <CardBody>
             
             <Typography color="gray">
-              <h1 className=' font-bold text-xl'>Pet Store</h1>
+              <h1 className=' font-bold text-xl'>Codepen Clone</h1>
               <NavLink to ='https://clone-codepen-git-second-umesh-rokas-projects.vercel.app/'><Button className='my-[10px]'> Vist Website</Button></NavLink>
               
             </Typography>
