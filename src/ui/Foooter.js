@@ -18,8 +18,8 @@ const Footer=() =>{
     <footer  className="relative text-white  w-full">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6">
-            Material Tailwind
+          <Typography variant="h5" className="mb-6 uppercase">
+            Portfoli
           </Typography>
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
