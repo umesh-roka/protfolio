@@ -87,6 +87,7 @@ const  Header=()=> {
         <div className="flex justify-between text-blue-gray-900">
 
         <div className="flex font-bold text-xl uppercase text-white items-center justify-start ">
+          <img className="w-[20px] h-[20px]" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShmq40nL3yAS0N42VdrTahDKT3-KYPHT3S4w&s' alt=""/>
         <h1>Portfolio</h1>
        </div>
        
