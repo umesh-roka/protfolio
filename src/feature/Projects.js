@@ -34,7 +34,7 @@ const Projects = () => {
             
             <Typography color="gray">
               <h1 className=' font-bold text-xl'>Pet Store</h1>
-              <NavLink to='https://pawstore-delta.vercel.app/'><Button className='my-[10px]'> Vist Website</Button></NavLink>
+              <NavLink to='https://pawstore-one.vercel.app/'><Button className='my-[10px]'> Vist Website</Button></NavLink>
               
             </Typography>
            
