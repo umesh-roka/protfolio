@@ -55,7 +55,7 @@ const Header = () => {
         <NavLink to="#" onClick={(e) => {
           e.preventDefault();
           scrollToSection('skills');
-          handleNavClick();
+         
         }}>Skills</NavLink>
       </Typography>
       <Typography as="li" className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md hover:text-white hover:bg-orange-400">
@@ -65,7 +65,7 @@ const Header = () => {
         <NavLink to="#" onClick={(e) => {
           e.preventDefault();
           scrollToSection('contact');
-          handleNavClick();
+          
         }}>Contact</NavLink>
       </Typography>
     </ul>
