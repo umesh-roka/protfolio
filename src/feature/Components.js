@@ -22,8 +22,9 @@ const Components = () => {
  <h1 className='lg:text-3xl md:text-lg'>Hi ! I'M Umesh Roka Magar</h1>
  <h1 className='lg:text-3xl '>Full Stack Developer</h1>
  <div className=' transition duration-150 ease-out hover:ease-in mt-3'>
- {/* <button className='uppercase transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 bg-blue-500 duration-300 ... hover:bg-orange-300 max-w-fit px-3  rounded'>Contact</button> */}
- <NavLink to={resume} download={'Resume.docx'}> Download Resume</NavLink>
+ <NavLink to={resume} download={'Resume.docx'}>
+ <button className='uppercase transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 bg-blue-500 duration-300 ... hover:bg-orange-300 max-w-fit px-3  rounded'>Download Resume</button>
+  </NavLink>
 
  </div>
 </div>
