@@ -39,7 +39,7 @@ const Components = () => {
 
 
 
-<div id='about' className="about-sec pb-[30px]">
+<div ref={sectionRefs.about} id='about' className="about-sec pb-[30px]">
 
 <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
 <h1 className='p-3 lg:mx-[200px] uppercase text-2xl lg:2xl'>About me</h1>
@@ -58,11 +58,11 @@ const Components = () => {
 <div  ref={sectionRefs.services} className="pt-6 Services-sec">
 <Services/>
 </div>
-<div className="projects pt-6 ">
+<div ref={sectionRefs.projects} className="projects pt-6 ">
 <Projects/>
 </div>
 
-<div className=" bg-blue-gray-900 pt-[10px] mt-[100px] ">
+<div ref={sectionRefs.contact} className=" bg-blue-gray-900 pt-[10px] mt-[100px] ">
 <Footer/>
 </div>
 </div>

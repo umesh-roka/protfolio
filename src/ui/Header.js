@@ -37,7 +37,7 @@ const Header = () => {
     return (e) => {
       e.preventDefault();
       scrollToSection(section);
-      setTimeout(handleNavClick, 500); // Delay closing the nav to allow scrolling
+      setTimeout(handleNavClick, 100); // Delay closing the nav to allow scrolling
     };
   };
 
@@ -53,7 +53,7 @@ const Header = () => {
         <NavLink to="#" onClick={handleNavLinkClick('skills')}>Skills</NavLink>
       </Typography>
       <Typography as="li" className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md hover:text-white hover:bg-orange-400">
-        <NavLink to="#">About</NavLink>
+        <NavLink to="#" onClick={handleNavLinkClick('about')}>About</NavLink>
       </Typography>
       <Typography as="li" className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md hover:text-white hover:bg-orange-400">
         <NavLink to="#" onClick={handleNavLinkClick('contact')}>Contact</NavLink>

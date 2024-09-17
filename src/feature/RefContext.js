@@ -8,6 +8,8 @@ const RefProvider = ({ children }) => {
     services: useRef(null),
     contact: useRef(null),
     skills: useRef(null),
+    about: useRef(null),
+    projects:useRef(null)
   };
 
   return (
