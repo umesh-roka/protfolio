@@ -39,7 +39,7 @@ const Header = () => {
     return (e) => {
       e.preventDefault();
       scrollToSection(section);
-      setTimeout(handleNavClick, 500); // Delay closing the nav to allow scrolling
+      setTimeout(handleNavClick, 1000); // Delay closing the nav to allow scrolling
     };
   };
 
