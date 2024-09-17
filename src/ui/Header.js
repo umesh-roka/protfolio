@@ -49,7 +49,7 @@ const  Header=()=> {
      
         className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
       >
-        <NavLink onClick={() => scrollToSection('services')} >Services</NavLink>
+        <NavLink onClick={() => scrollToSection('services')} ><button onClick={handleNavClick}>Services</button></NavLink>
 
       </Typography>
       <Typography
