@@ -12,6 +12,10 @@ import { RefContext } from "../feature/RefContext";
 const  Header=()=> {
   const [openNav, setOpenNav] = React.useState(false);
 
+  const handleNavClick = () =>{
+    setOpenNav(false);
+  }
+
   const sectionRefs = useContext(RefContext);
   const scrollToSection = (section) => {
     if (sectionRefs[section].current) {
@@ -45,7 +49,7 @@ const  Header=()=> {
      
         className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md   hover:text-white hover:bg-orange-400"
       >
-        <NavLink onClick={() => scrollToSection('services')} >Services</NavLink>
+        <NavLink onClick={() => scrollToSection('services') &&handleNavClick} >Services</NavLink>
 
       </Typography>
       <Typography
