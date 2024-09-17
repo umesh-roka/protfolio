@@ -46,7 +46,7 @@ const Header = () => {
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white font-bold">
       <Typography as="li" className="p-1 lg:hover:px-2 lg:hover:rounded-md font-bold text-xl hover:text-white hover:bg-orange-400">
-        <NavLink to="#" onClick={handleNavLinkClick('home')}>Home</NavLink>
+        <NavLink to="#" onClick={handleNavLinkClick}>Home</NavLink>
       </Typography>
       <Typography as="li" className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md hover:text-white hover:bg-orange-400">
         <NavLink to="#" onClick={handleNavLinkClick('services')}>Services</NavLink>
