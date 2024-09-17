@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import {
   Navbar,
   Typography,
@@ -10,19 +10,17 @@ import { RefContext } from "../feature/RefContext";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
+  const sectionRefs = useContext(RefContext);
 
   const handleNavClick = () => {
     setOpenNav(false);
   };
 
-  const sectionRefs = useContext(RefContext);
-
   const scrollToSection = (section) => {
     if (sectionRefs[section] && sectionRefs[section].current) {
-      console.log(`Scrolling to section: ${section}`); // Debug log
       sectionRefs[section].current.scrollIntoView({ behavior: 'smooth' });
     } else {
-      console.warn(`Section reference not found: ${section}`); // Debug log
+      console.warn(`Section reference not found: ${section}`);
     }
   };
 
@@ -35,38 +33,30 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleNavLinkClick = (section) => {
+    return (e) => {
+      e.preventDefault();
+      scrollToSection(section);
+      setTimeout(handleNavClick, 500); // Delay closing the nav to allow scrolling
+    };
+  };
+
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white font-bold">
       <Typography as="li" className="p-1 lg:hover:px-2 lg:hover:rounded-md font-bold text-xl hover:text-white hover:bg-orange-400">
-        <NavLink to="#" onClick={(e) => {
-          e.preventDefault();
-          scrollToSection('home');
-          handleNavClick();
-        }}>Home</NavLink>
+        <NavLink to="#" onClick={handleNavLinkClick('home')}>Home</NavLink>
       </Typography>
       <Typography as="li" className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md hover:text-white hover:bg-orange-400">
-        <NavLink to="#" onClick={(e) => {
-          e.preventDefault();
-          scrollToSection('services');
-          handleNavClick();
-        }}>Services</NavLink>
+        <NavLink to="#" onClick={handleNavLinkClick('services')}>Services</NavLink>
       </Typography>
       <Typography as="li" className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md hover:text-white hover:bg-orange-400">
-        <NavLink to="#" onClick={(e) => {
-          e.preventDefault();
-          scrollToSection('skills');
-         
-        }}>Skills</NavLink>
+        <NavLink to="#" onClick={handleNavLinkClick('skills')}>Skills</NavLink>
       </Typography>
       <Typography as="li" className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md hover:text-white hover:bg-orange-400">
         <NavLink to="#">About</NavLink>
       </Typography>
       <Typography as="li" className="p-1 font-bold text-xl lg:hover:px-2 lg:hover:rounded-md hover:text-white hover:bg-orange-400">
-        <NavLink to="#" onClick={(e) => {
-          e.preventDefault();
-          scrollToSection('contact');
-          
-        }}>Contact</NavLink>
+        <NavLink to="#" onClick={handleNavLinkClick('contact')}>Contact</NavLink>
       </Typography>
     </ul>
   );
