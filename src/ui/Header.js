@@ -17,10 +17,12 @@ const Header = () => {
   };
 
   const scrollToSection = (section) => {
-    if (sectionRefs[section] && sectionRefs[section].current) {
-      sectionRefs[section].current.scrollIntoView({ behavior: 'smooth' });
+    const sectionRef = sectionRefs[section];
+    if (sectionRef && sectionRef.current) {
+      console.log(`Scrolling to section: ${section}`); // Debug log
+      sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
-      console.warn(`Section reference not found: ${section}`);
+      console.warn(`Section reference not found: ${section}`); // Debug log
     }
   };
 
